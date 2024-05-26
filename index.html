@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="background-color: rgb(105, 231, 177)">
+    <div class="main-layout">
+      <header class="header">
+        <h1>Survey Form</h1>
+        <p>
+          Feel Free To Answer The Questions Below Based On Your Own Experience
+          And Opinion. If You Are Not Convenient In Answering A Prticular
+          Question Plese Skip It By Answering "No". Every Answer Would Be Very
+          Appericiated. Thanku For Your Time.
+        </p>
+      </header>
+      <main class="about">
+        <section class="left">
+          <div class="info">
+            <div>
+              <label for="name"> Your Name</label><br />
+              <input type="text" id="name" placeholder="Enter Your Name" />
+            </div>
+            <div>
+              <label for="email"> Your Email Adress</label><br />
+              <input type="email" id="email" placeholder="user@user.com" />
+            </div>
+
+            <div>
+              <label for="phone"> Your Phone Number</label><br />
+              <input type="number" id="phone" placeholder="9999999999" />
+            </div>
+          </div>
+
+          <div class="place">
+
+          <form>
+            <h5>Where Do You Live?</h5>
+            <select name="city" value="select">
+              <option>Delhi NCR</option>
+              <option>Banglore</option>
+              <option>Pune</option>
+              <option>Chennai</option>
+            </select>
+          </form>
+        </div>
+          <!-- <div class="age"><p>Age</p></div> -->
+          <div class="age-detail">
+            <div class="age"><p>Age</p></div>
+            <form>
+              <div><input type="radio" name="age" /> 15-20</div>
+              <div><input type="radio" name="age" /> 21-30</div>
+              <div><input type="radio" name="age" /> 31-40</div>
+              <div><input type="radio" name="age" /> 41-50</div>
+              <div><input type="radio" name="age" /> Prefer not to say</div>
+            </form>
+          </div>
+          <form>
+            <h4>How would you rate your proficiency in coding</h4><br>
+            <input type="radio" name="proficiency" /> Beginer <br />
+            <input type="radio" name="proficiency" /> Intermediate <br />
+            <input type="radio" name="proficiency" /> Advance <br />
+          </form>
+        </section>
+        <section class="right">
+          <form>
+            <h4>Have you ever appeared in any coding contest?</h4><br>
+            <input type="radio" value="yes" name="coding" /> Yes <br />
+            <input type="radio" value="no" name="coding" /> No
+          </form>
+          <form>
+            <h4>
+              Discuss what drives your passion for coding and outline your
+              aspirations in the field.
+            </h4><br>
+            <textarea name="passion" rows="4" cols="70"></textarea>
+          </form>
+          <form>
+            <h4>What are some of the challenges you face while coding?</h4><br>
+            <textarea name="challenge" rows="4" cols="70"></textarea>
+          </form>
+          <form>
+            <h4>
+              Please list the Data Structures you have a strong understanding
+              of.
+            </h4><br>
+            <textarea name="challenge" rows="4" cols="70"></textarea>
+          </form>
+          <div>
+            <button type="submit">Submit Form</button>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
